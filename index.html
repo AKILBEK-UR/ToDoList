@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoApp</title>
     <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <main>
+        <section class = "heading">
+            <h1>What's up, </h1>
+            <input type="text" placeholder=" Name here...">
+        </section>
+        <section class="activity">
+            <h2>CREATE A TODO</h2>
+            <h3>What's on your todo list?</h3>
+            <input class="activity__input" type="text" placeholder="e. g. get a milk"> 
+        </section>
+        <section class="category">
+            <h3>Pick a category</h3>
+            <div class="category__input">
+                <label class="category__input__first">
+                    <input type="radio" name="category" id="category1" value="business"> 
+                    <span class="bubble business"></span>
+                    <div><h2>Business</h2></div>
+                </label>
+                <label class="category__input__second">
+                    <input type="radio" name="category" id="category2" value="personal">
+                    <span class="bubble personal"></span>
+                    <div><h2>Personal</h2></div>
+                </label>
+                <input type="submit" value="Add todo" />
+            </div>
+        </section>
+        <section class="todo-list">
+			<h3>TODO LIST</h3>
+			<div class="list" id="todo-list"></div>
+		</section>
+    </main>
 </body>
 </html>
