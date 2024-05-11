@@ -61,7 +61,7 @@ h3{
 .activity input[type="text"] {
     font-weight:400;
     background-clip: padding-box;
-    height: 6rem;
+    height: 5rem;
     width: auto;
     display: block;
     width: 100%;
@@ -72,7 +72,6 @@ h3{
     border-width: 0px;
     background-color: #FFF;
     border-radius: 0.8rem;
-    margin-bottom: 1.5rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -92,10 +91,10 @@ h3{
 .category__input{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 10rem;
     column-gap: 2rem;   
 }
 .category .category__input label{
+    height: 10rem;
     display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -110,13 +109,12 @@ input[type="radio"],
 input[type="checkbox"] {
 	display: none;
 }
-
 .bubble {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	width: 20px;
-	height: 20px;
+	width: 2rem;
+	height: 2rem;
 	border-radius: 999px;
 	border: 2px solid #3a82ee;
 	box-shadow: 0px 0px 4px rgba(58, 130, 238, 0.75);
@@ -182,4 +180,70 @@ input:checked ~ .bubble::after {
 .category input[type="submit"]:hover{
     background-color: rgba(5, 73, 176, 0.75);
 }
-
+.todo-list{
+    grid-column: 2/3;
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.8rem;
+}
+.task{
+    display: grid;
+    align-items: center;
+    grid-template-columns:  3rem 1fr 9rem 6rem;
+    background-color: white;
+    border-radius: 0.8rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    height: 6rem;
+}
+.task input[type="checkbox"]{
+    display: block;
+    grid-column: 1/2;
+}
+.task-name{
+    align-items: flex-start;
+    align-content: center;
+    margin-left: 2rem;
+    grid-column: 2/3;
+    width: auto;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight:400;
+}
+.delete-btn{
+    height: 3rem;
+    width: 7rem;
+    grid-column: 3/4;
+    font-size:1.6rem;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 0.4rem;
+    background-color: rgb(219, 70, 70);
+    border-width: 0rem;
+    align-self: center;
+    transition: 0.2s ease-out;
+}
+.delete-btn:hover{
+    background-color: rgb(145, 46, 46);
+}
+.edit-btn{
+    grid-column: 4/5;
+    height: 3rem;
+    width: 5rem;
+    font-size:1.6rem;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 0.4rem;
+    background-color: #EA40A4;
+    border-width: 0px;
+    align-self: center;
+    transition: 0.2s ease-out;
+}
+.edit-btn:hover{
+    background-color: #942968;
+}
