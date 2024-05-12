@@ -68,7 +68,7 @@ h3{
     font-size: 1.6rem;
     padding: 1rem 1.5rem;
     font-family: "Montserrat", sans-serif;
-    color: var(--dark);
+    color: #313154;
     border-width: 0px;
     background-color: #FFF;
     border-radius: 0.8rem;
@@ -227,10 +227,12 @@ input:checked ~ .bubble::after {
     border-width: 0rem;
     align-self: center;
     transition: 0.2s ease-out;
+    color: white;
 }
 .delete-btn:hover{
     background-color: rgb(145, 46, 46);
 }
+
 .edit-btn{
     grid-column: 4/5;
     height: 3rem;
@@ -243,7 +245,11 @@ input:checked ~ .bubble::after {
     border-width: 0px;
     align-self: center;
     transition: 0.2s ease-out;
+    color: white;
 }
 .edit-btn:hover{
     background-color: #942968;
+}
+.task input[type="checkbox"]:checked + .task-name {
+    text-decoration: line-through;
 }
